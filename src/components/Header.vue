@@ -80,15 +80,26 @@ export default {
         .auth()
         .signOut()
         .then(() => {
-          console.log("a");
+          this.showToast();
         });
       localStorage.clear();
+    },
+    showToast() {
+      this.$toast.open({
+        message: "Logout Successfully!",
+        type: "success",
+        duration: 5000,
+        dismissible: true,
+        queue: true,
+        position: "top-right",
+      });
     },
   },
   created() {
     firebase.auth().onAuthStateChanged((user) => {
       this.user = user;
     });
+    this.$router.push({ name: "Main" });
   },
   components: {
     "v-icon": Icon,

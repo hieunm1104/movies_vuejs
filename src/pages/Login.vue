@@ -59,10 +59,21 @@ export default {
                   localStorage.setItem("email", userData.email);
                 });
               });
+            this.showToast();
             this.$router.push({ name: "Main" });
           }
         })
         .catch((er) => (this.er = er));
+    },
+    showToast() {
+      this.$toast.open({
+        message: "Login Successfully!",
+        type: "success",
+        duration: 5000,
+        dismissible: true,
+        queue: true,
+        position: "top-right",
+      });
     },
   },
 };
