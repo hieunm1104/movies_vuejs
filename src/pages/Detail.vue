@@ -14,7 +14,7 @@
               />
             </div>
             <div id="trailerIcon">
-              <p>Assista ao trailer</p>
+              <p>Trailer</p>
               <v-icon name="ticket-alt" scale="1.8" color="#e5e5e5" />
             </div>
           </div>
@@ -40,11 +40,11 @@
           </button>
           <div id="descriptions">
             <p>
-              Duração
+              Time
               <span>{{ movie.Runtime }}</span>
             </p>
             <p>
-              Gênero
+              Genre
               <span>{{ movie.Genre }}</span>
             </p>
             <p>
@@ -53,15 +53,15 @@
             </p>
 
             <p>
-              Atores
+              Actors
               <span>{{ movie.Actors }}</span>
             </p>
             <p>
-              Considerações
+              Awards
               <span>{{ movie.Awards }}</span>
             </p>
             <p>
-              Produção
+              Production
               <span>{{ movie.Production }}</span>
             </p>
           </div>
@@ -118,7 +118,7 @@ export default {
     },
     showToast() {
       this.$toast.open({
-        message: "Adicionado em minha lista",
+        message: "Added to my list",
         type: "success",
         duration: 5000,
         dismissible: true,

@@ -67,10 +67,6 @@ export default {
         } = await Movies(this.type).get();
 
         this.movies = Search;
-
-        for (let i = 0; i < this.movies.length; i++) {
-          a = this.movies[i].imdbID;
-        }
       } catch (error) {
         console.error(error);
       } finally {
@@ -80,14 +76,21 @@ export default {
     showDetail(_id) {
       this.$router.push({ name: "Detail", params: { id: _id } });
     },
-    like(id) {
+    like() {
       if (this.user === null) {
         this.$router.push({ name: "Login" });
       }
-      let selectedMovie = a;
-      if (selectedMovie === id) {
-        console.log("hihi");
-      }
+      this.showToast();
+    },
+    showToast() {
+      this.$toast.open({
+        message: "Add to my like successfully!",
+        type: "success",
+        duration: 5000,
+        dismissible: true,
+        queue: true,
+        position: "top-right",
+      });
     },
   },
   created() {

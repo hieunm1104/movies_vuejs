@@ -13,13 +13,10 @@
               <a>Home</a>
             </li>
             <li>
-              <a>Filmes</a>
+              <a>Film</a>
             </li>
             <li>
-              <a>Séries</a>
-            </li>
-            <li>
-              <a>Mais recentes</a>
+              <a>Series</a>
             </li>
             <li @click="navigateMyList">
               <a>My List</a>
@@ -27,9 +24,8 @@
           </ul>
         </li>
         <li class="items" @click="navigateMain">Home</li>
-        <li class="items">Séries</li>
-        <li class="items">Filmes</li>
-        <li class="items">Mais recentes</li>
+        <li class="items">Series</li>
+        <li class="items">Films</li>
         <li class="items" @click="navigateMyList">My List</li>
         <li></li>
       </ul>

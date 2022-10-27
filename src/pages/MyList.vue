@@ -70,7 +70,7 @@ export default {
     },
     removeToast() {
       this.$toast.open({
-        message: "Removido de minha lista",
+        message: "Successfully Deleted",
         type: "error",
         duration: 3000,
         dismissible: true,
@@ -80,7 +80,7 @@ export default {
     },
     markAsWatchedToast() {
       this.$toast.open({
-        message: "Marcado como assistido",
+        message: "Mark Watched",
         type: "success",
         duration: 3000,
         dismissible: true,

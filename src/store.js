@@ -5,13 +5,11 @@ Vue.use(Vuex);
 
 let list = window.localStorage.getItem("list");
 let movieWatched = window.localStorage.getItem("movieWatched");
-
 export default new Vuex.Store({
   state: {
     list: list ? JSON.parse(list) : [],
     movieWatched: movieWatched ? JSON.parse(movieWatched) : [],
   },
-
   mutations: {
     addToMyList(state, movie) {
       let existMovie = state.list.find(

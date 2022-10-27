@@ -5,11 +5,7 @@
     </div>
     <div class="containerReleases">
       <h1>Cristiano Ronaldo</h1>
-      <p>
-        Bill Gates fala sobre a missão de vida ou morte para melhorar as
-        condições de saneamento no mundo em desenvolvimento. E suas irmãs
-        relembra a infância com ele.
-      </p>
+      <p>The best soccer player of all time.</p>
       <button id="buttonPlay">
         <v-icon name="play" scale="1" id="iconMain" color="#e5e5e5" />
         <span>Play</span>
